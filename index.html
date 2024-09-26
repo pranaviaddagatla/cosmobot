@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot</title>
+    <img src="Web.jpeg" />
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Chatbot Icon -->
+    <div class="chatbot-icon" id="chatbot-icon" onclick="toggleChatWindow()">
+      <img src="bot-icon.png" alt="Chatbot" />
+    </div>
+
+    <!-- Chat Window -->
+    <div class="chat-container" id="chat-container">
+      <div class="chat-header">
+        <span>Cosmo-Bot</span>
+        <button id="minimize-btn" onclick="toggleChatWindow()">-</button>
+      </div>
+      <div class="chat-window" id="chat-window">
+        <div class="chat-content">
+          <div class="bot-message">
+            Hi! I'm your assistant. How can I help you today?
+          </div>
+        </div>
+      </div>
+      <div class="chat-input-area">
+        <input type="text" id="chat-input" placeholder="Write a reply..." />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="app.js"></script>
+  </body>
+</html>
